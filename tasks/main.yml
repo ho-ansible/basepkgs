@@ -2,26 +2,23 @@
 
 - name: Stop unneeded services
   tags:
-  - service
+    - service
   service:
-    name: "{{item}}"
+    name: "{{ item }}"
     state: stopped
-  with_items: "{{stop_services}}"
+  with_items: "{{ stop_services }}"
 
 - name: Install packages
   tags:
-  - package
+    - package
   package:
-    name: "{{item}}"
-    state: latest
-  with_items: "{{install_pkgs}}"
+    name: "{{ install_pkgs }}"
 
 - name: Clean unneeded packages
   tags:
-  - package
+    - package
   package:
-    name: "{{item}}"
+    name: "{{ remove_pkgs }}"
     state: absent
     purge: yes
-  with_items: "{{remove_pkgs}}"
 

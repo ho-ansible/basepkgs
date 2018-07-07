@@ -6,7 +6,7 @@
   service:
     name: "{{ item }}"
     state: stopped
-  with_items: "{{ stop_services }}"
+  loop: "{{ stop_services }}"
 
 - name: Install packages
   tags:

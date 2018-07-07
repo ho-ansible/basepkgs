@@ -5,6 +5,9 @@ Install standard set of software and remove unused packages.
 Only tested on Debian stable, for now.
 
 ## Role Variables
++ `stop_services`: services to stop/disable
++ `remove_pkgs`: packages to uninstall
++ `install_pkgs`: packages to install
 
 ## Dependencies
 None.

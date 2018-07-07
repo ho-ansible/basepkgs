@@ -6,6 +6,7 @@
   service:
     name: "{{ item }}"
     state: stopped
+    enabled: no
   loop: "{{ stop_services }}"
 
 - name: Install packages

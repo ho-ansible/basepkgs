@@ -1,5 +1,6 @@
 # Ansible role: basepkgs
 Install standard set of software and remove unused packages.
+Packages requiring configuration have their own roles.
 
 ## Requirements
 Only tested on Debian stable, for now.

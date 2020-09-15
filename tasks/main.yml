@@ -2,7 +2,7 @@
 
 - name: Stop unneeded services
   tags:
-    - service
+  - service
   service:
     name: "{{ item }}"
     state: stopped
@@ -11,13 +11,13 @@
 
 - name: Install packages
   tags:
-    - package
+  - package
   package:
     name: "{{ install_pkgs }}"
 
 - name: Clean unneeded packages
   tags:
-    - package
+  - package
   package:
     name: "{{ remove_pkgs }}"
     state: absent

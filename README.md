@@ -18,7 +18,7 @@ None.
 ```
 - hosts: all
   roles:
-    - { role: ho-ansible.basepkgs }
+  - { role: ho-ansible.basepkgs }
 ```
 
 ## License

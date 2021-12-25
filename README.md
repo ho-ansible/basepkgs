@@ -6,9 +6,9 @@ Packages requiring configuration have their own roles.
 Only tested on Debian stable, for now.
 
 ## Role Variables
-+ `stop_services` (default: empty): services to stop/disable
-+ `remove_pkgs` (default: empty): packages to uninstall
-+ `install_pkgs` (default: empty): packages to install
++ `services_stop` (default: empty): services to stop/disable
++ `pkgs_remove` (default: empty): packages to uninstall
++ `pkgs_install` (default: empty): packages to install
 
 ## Dependencies
 None.

@@ -7,19 +7,19 @@
     name: "{{ item }}"
     state: stopped
     enabled: no
-  loop: "{{ stop_services }}"
+  loop: "{{ services_stop }}"
 
 - name: Install packages
   tags:
   - package
   package:
-    name: "{{ install_pkgs }}"
+    name: "{{ pkgs_install }}"
 
 - name: Clean unneeded packages
   tags:
   - package
   package:
-    name: "{{ remove_pkgs }}"
+    name: "{{ pkgs_remove }}"
     state: absent
     purge: yes
 

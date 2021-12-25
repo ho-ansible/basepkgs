@@ -1,4 +1,5 @@
 ---
-stop_services: []
-remove_pkgs: []
-install_pkgs: []
+services_stop: []
+pkgs_remove: []
+pkgs_install: []
+pkgs_extra: []

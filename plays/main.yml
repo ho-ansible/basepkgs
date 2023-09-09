@@ -1,0 +1,10 @@
+#! /usr/bin/env ansible-playbook
+# Install basic packages for Linux
+# Replace 'linux' with your own inventory group
+---
+- name: basepkgs | install standard packages
+  hosts: linux
+  roles:
+  - role: basepkgs
+    tags:
+    - basepkgs

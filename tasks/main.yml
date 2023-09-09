@@ -9,6 +9,19 @@
     enabled: no
   loop: "{{ services_stop }}"
 
+- name: Set standard APT sources
+  tags:
+  - apt
+  template:
+    src: sources.list.j2
+    dest: /etc/apt/sources.list
+
+- name: Update APT cache
+  tags:
+  - apt
+  apt:
+    update_cache: yes
+
 - name: Install packages
   tags:
   - package

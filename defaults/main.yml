@@ -1,7 +1,5 @@
 ---
 services_stop: []
 pkgs_remove: []
-pkgs_install: []
-pkgs_extra: []
 apt_source: "http://deb.debian.org/debian"
 apt_components: "main"

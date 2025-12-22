@@ -26,7 +26,7 @@
   tags:
   - package
   package:
-    name: "{{ pkgs_install }}"
+    name: "{{ lookup('community.general.merge_variables', '^pkgs_install_?') }}"
 
 - name: Clean unneeded packages
   tags:

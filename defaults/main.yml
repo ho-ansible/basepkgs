@@ -3,3 +3,4 @@ services_stop: []
 pkgs_remove: []
 apt_source: "http://deb.debian.org/debian"
 apt_components: "main"
+apt_keyring: /usr/share/keyrings/debian-archive-{{ ansible_distribution_release }}-automatic.gpg

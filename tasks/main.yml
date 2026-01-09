@@ -13,8 +13,8 @@
   tags:
   - apt
   template:
-    src: sources.list.j2
-    dest: /etc/apt/sources.list
+    src: debian.sources.j2
+    dest: /etc/apt/sources.list.d/debian.sources
 
 - name: Update APT cache
   tags:

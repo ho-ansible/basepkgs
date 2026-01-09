@@ -1,0 +1,19 @@
+# {{ ansible_managed }}
+
+Types: deb
+URIs: {{ apt_source }}
+Suites: {{ ansible_distribution_release }}
+Components: {{ apt_components }}
+Signed-By: {{ apt_keyring }}
+
+Types: deb
+URIs: {{ apt_source }}
+Suites: {{ ansible_distribution_release }}-updates
+Components: {{ apt_components }}
+Signed-By: {{ apt_keyring }}
+
+Types: deb
+URIs: http://security.debian.org/debian-security/
+Suites: {{ ansible_distribution_release }}-security
+Components: {{ apt_components }}
+Signed-By: /usr/share/keyrings/debian-archive-{{ ansible_distribution_release }}-security-automatic.gpg
